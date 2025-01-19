@@ -11,7 +11,7 @@ const Header = () => {
     ];
 
     return (
-        <header className='relative py-8 md:py-12 h-screen flex justify-center items-center w-full'> 
+        <header className='relative py-8 md:py-12 h-screen flex justify-center items-center w-full text-gray-800'> 
             <div className='flex flex-col items-left px-4 md:px-0'>
                 <span className="inline-block px-3 md:px-4 py-1 mb-4 text-xs md:text-sm border border-gray-800 rounded-full w-fit">
                     Jess (Yan Tung) Lam
