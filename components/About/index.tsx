@@ -59,7 +59,7 @@ const About = () => {
 
                         <div className="w-1/3 mx-8">
                             <div className="text-center md:text-left mb-12">
-                                <h1 className="text-4xl font-bold font-serif mb-4">Hello! I'm Jess.</h1>
+                                <h1 className="text-4xl font-bold font-serif mb-4">Hello! I&apos;m Jess.</h1>
                                 <p className="text-m leading-relaxed mb-4">
                                     I am an aspiring software developer based in the UK, with a background in MSc Computing from Cardiff University. 
                                     During my placement year as a QA Engineer, I gained hands-on experience in Agile environments, specialising in automated testing using the Robot Framework to streamline workflows in test-driven development.
