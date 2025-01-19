@@ -1,9 +1,11 @@
+'use client';
+
 import React from 'react';
 
 const Header = () => {
 
     const tags = [
-        { id: '1', label: 'About Me' },
+        { id: '1', label: 'About Me', href: '#about' },
         { id: '2', label: 'Social Media' },
         { id: '3', label: 'Projects' }
     ];
@@ -11,7 +13,7 @@ const Header = () => {
     return (
         <header className='relative py-12 h-screen flex justify-center items-center'> 
             <div className='flex flex-col items-left'>
-                <span className="inline-block px-4 py-1 mb-4 text-sm border border-gray-200 rounded-full w-fit">
+                <span className="inline-block px-4 py-1 mb-4 text-sm border border-gray-800 rounded-full w-fit">
                     Jess (Yan Tung) Lam
                 </span>
 
@@ -50,13 +52,20 @@ const Header = () => {
 
                 <div className="flex flex-wrap gap-3">
                     {tags.map((tag) => (
-                    <span
+                    <a
                         key={tag.id}
-                        className="px-4 py-1 text-sm border border-gray-200 rounded-full
-                                hover:border-gray-400 transition-colors duration-200"
+                        href={tag.href}
+                        className="px-4 py-1 text-sm border border-gray-800 rounded-full
+                                hover:border-gray-400 transition-colors duration-200 cursor-pointer"
+                        onClick={(e) => {
+                            if (tag.href) {
+                                e.preventDefault();
+                                document.querySelector(tag.href)?.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
                     >
                         {tag.label}
-                    </span>
+                    </a>
                     ))}
                 </div>
             </div>
