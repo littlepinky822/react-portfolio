@@ -11,19 +11,19 @@ const Header = () => {
     ];
 
     return (
-        <header className='relative py-12 h-screen flex justify-center items-center'> 
-            <div className='flex flex-col items-left'>
-                <span className="inline-block px-4 py-1 mb-4 text-sm border border-gray-800 rounded-full w-fit">
+        <header className='relative py-8 md:py-12 h-screen flex justify-center items-center w-full'> 
+            <div className='flex flex-col items-left px-4 md:px-0'>
+                <span className="inline-block px-3 md:px-4 py-1 mb-4 text-xs md:text-sm border border-gray-800 rounded-full w-fit">
                     Jess (Yan Tung) Lam
                 </span>
 
                 <div className="relative">
-                    <h1 className="text-9xl font-serif font-bold tracking-tight mb-8 mr-40">
+                    <h1 className="text-6xl md:text-9xl font-serif font-bold tracking-tight mb-4 md:mb-8 mr-16 md:mr-40">
                         Portfolio
                     </h1>
 
                     {/* Blue blob effect with circular text */}
-                    <div className="absolute -top-10 right-0 w-64 h-64">
+                    <div className="absolute -top-10 right-0 w-28 h-28 md:w-64 md:h-64">
                         <div className="w-full h-full bg-blue-300/30 rounded-full blur-2xl" aria-hidden="true" />
 
                         {/* Circular Text */}
@@ -55,7 +55,7 @@ const Header = () => {
                     <a
                         key={tag.id}
                         href={tag.href}
-                        className="px-4 py-1 text-sm border border-gray-800 rounded-full
+                        className="px-4 py-1 text-xs md:text-sm border border-gray-800 rounded-full
                                 hover:border-gray-400 transition-colors duration-200 cursor-pointer"
                         onClick={(e) => {
                             if (tag.href) {

@@ -2,22 +2,21 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section id="about" className="py-16 text-gray-800">
-            <div className="container mx-auto px-8 max-w-8xl w-screen">
+        <section id="about" className="py-8 md:py-16 text-gray-800">
+            <div className="container mx-auto px-4 md:px-8 max-w-8xl w-full">
                 {/* Content Wrapper */}
                 <div className="flex flex-col md:flex-row items-center">
-                    
-
                     {/* Text Content */}
-                    <div className="flex">
-                        {/* Image */}
-                        <div className="w-1/3 flex flex-col items-center justify-even gap-6">
+                    <div className="flex flex-col md:flex-row w-full">
+                        {/* Image and Social Links Column */}
+                        <div className="w-full md:w-1/3 flex flex-col items-center justify-evenly gap-6 mb-8 md:mb-0">
                             <img
                                 src="/IMG_0192.jpg"
                                 alt="Jess"
-                                className="w-full h-full object-cover rounded-full shadow-lg md:w-64 md:h-64 mb-8 md:mb-0 md:mr-12 "
+                                className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg mb-4 md:mb-8"
                             />
-                            <div className="flex flex-col items-start justify-center">
+                            <div className="flex flex-col items-center md:items-start justify-center">
+                                {/* CV Button */}
                                 <span className="flex items-center w-fit gap-2 px-4 py-1 text-sm border border-gray-800 rounded-full hover:bg-gray-100 transition-colors duration-200">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +33,9 @@ const About = () => {
                                     </svg>
                                     <a href="./Yan_Tung_Lam_QA_CV.pdf" target="_blank" rel="noopener noreferrer">See my CV</a>
                                 </span>
-                                <div id="socials" className='mt-4'>
+                                
+                                {/* Social Links */}
+                                <div id="socials" className='mt-4 w-full flex flex-col items-center md:items-start'>
                                     <span className="flex items-center w-fit gap-2 px-4 py-1 text-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
                                             <path d="M 5 3 C 3.895 3 3 3.895 3 5 L 3 19 C 3 20.105 3.895 21 5 21 L 19 21 C 20.105 21 21 20.105 21 19 L 21 5 C 21 3.895 20.105 3 19 3 L 5 3 z M 5 5 L 19 5 L 19 19 L 5 19 L 5 5 z M 7.7792969 6.3164062 C 6.9222969 6.3164062 6.4082031 6.8315781 6.4082031 7.5175781 C 6.4082031 8.2035781 6.9223594 8.7167969 7.6933594 8.7167969 C 8.5503594 8.7167969 9.0644531 8.2035781 9.0644531 7.5175781 C 9.0644531 6.8315781 8.5502969 6.3164062 7.7792969 6.3164062 z M 6.4765625 10 L 6.4765625 17 L 9 17 L 9 10 L 6.4765625 10 z M 11.082031 10 L 11.082031 17 L 13.605469 17 L 13.605469 13.173828 C 13.605469 12.034828 14.418109 11.871094 14.662109 11.871094 C 14.906109 11.871094 15.558594 12.115828 15.558594 13.173828 L 15.558594 17 L 18 17 L 18 13.173828 C 18 10.976828 17.023734 10 15.802734 10 C 14.581734 10 13.930469 10.406562 13.605469 10.976562 L 13.605469 10 L 11.082031 10 z"></path>
@@ -49,7 +50,7 @@ const About = () => {
                                     </span>
                                     <span className="flex items-center w-fit gap-2 px-4 py-1 text-sm">
                                         <svg fill="#000000" width="24" height="24" viewBox="0 0 1920 1920">
-                                            <path d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z" fill-rule="evenodd"/>
+                                            <path d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"/>
                                         </svg>
                                         <a href="mailto:jesslam321@gmail.com">jesslam321@gmail.com</a>
                                     </span>
@@ -57,32 +58,32 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="w-1/3 mx-8">
-                            <div className="text-center md:text-left mb-12">
-                                <h1 className="text-4xl font-bold font-serif mb-4">Hello! I&apos;m Jess.</h1>
-                                <p className="text-m leading-relaxed mb-4">
+                        {/* About Text Column */}
+                        <div className="w-full md:w-1/3 px-4 md:mx-8 mb-8 md:mb-0">
+                            <div className="text-center md:text-left">
+                                <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Hello! I&apos;m Jess.</h1>
+                                <p className="text-sm md:text-base leading-relaxed mb-4">
                                     I am an aspiring software developer based in the UK, with a background in MSc Computing from Cardiff University. 
                                     During my placement year as a QA Engineer, I gained hands-on experience in Agile environments, specialising in automated testing using the Robot Framework to streamline workflows in test-driven development.
                                 </p>
-                                <p className="text-m leading-relaxed mb-4">
+                                <p className="text-sm md:text-base leading-relaxed mb-4">
                                     My MSc dissertation focused on containerisation with Docker, where I developed a centralised platform for managing wildlife camera trap data. 
                                     This project enhanced my skills in web development, containerisation, and deploying Python and R-based applications to simplify workflows for end-users.
                                 </p>
-                                <p className="text-m leading-relaxed">
+                                <p className="text-sm md:text-base leading-relaxed">
                                     I am eager to explore the diversed aspects of software development, testing, and DevOps opportunities where I can apply my knowledge in automation and CI/CD. Feel free to reach out for collaboration!
                                 </p>
                             </div>
-
-                            
                         </div>
 
-                        <div className="w-1/3 mx-8">
-                            <div className="text-center md:text-left mb-12">
-                                <h1 className="text-3xl font-bold font-serif mb-4">Education</h1>
-                                <p className="text-m leading-relaxed">MSc Computing with Placement</p>
-                                <p className="text-sm leading-relaxed"><strong>Cardiff University</strong> | 2022 - 2024</p>
-                                <p className="text-m leading-relaxed mt-4">BSc Social Science (Sociology Major)</p>
-                                <p className="text-sm leading-relaxed"><strong>The Chinese University of Hong Kong</strong> | 2017 - 2022</p>
+                        {/* Education/Experience Column */}
+                        <div className="w-full md:w-1/3 px-4 md:mx-8">
+                            <div className="text-center md:text-left mb-8 md:mb-12">
+                                <h1 className="text-2xl md:text-3xl font-bold font-serif mb-4">Education</h1>
+                                <p className="text-sm leading-relaxed">MSc Computing with Placement</p>
+                                <p className="text-xs leading-relaxed"><strong>Cardiff University</strong> | 2022 - 2024</p>
+                                <p className="text-sm leading-relaxed mt-4">BSc Social Science (Sociology Major)</p>
+                                <p className="text-xs leading-relaxed"><strong>The Chinese University of Hong Kong</strong> | 2017 - 2022</p>
                             </div>
 
                             <div className="text-center md:text-left mb-12">
@@ -92,21 +93,22 @@ const About = () => {
                                 <p className="text-sm leading-relaxed">Aug 2023 - Jul 2024</p>
                             </div>
 
-                            <div className="flex flex-col text-center md:text-left mb-12">
-                                <h1 className="text-3xl font-bold font-serif mb-4">Tech Stack</h1>
-                                <div className="flex flex-row">
+                            {/* Tech Stack Section */}
+                            <div className="flex flex-col text-center md:text-left mb-8 md:mb-12">
+                                <h1 className="text-2xl md:text-3xl font-bold font-serif mb-4">Tech Stack</h1>
+                                <div className="flex flex-row justify-center md:justify-start">
                                     <div className="flex flex-col w-1/2">
-                                        <p className="text-m leading-relaxed">• HTML/CSS</p>
-                                        <p className="text-m leading-relaxed">• Python</p>
-                                        <p className="text-m leading-relaxed">• Flask</p>
-                                        <p className="text-m leading-relaxed">• JavaScript</p>
-                                        <p className="text-m leading-relaxed">• Keep learning...</p>
+                                        <p className="text-sm leading-relaxed">• HTML/CSS</p>
+                                        <p className="text-sm leading-relaxed">• Python</p>
+                                        <p className="text-sm leading-relaxed">• Flask</p>
+                                        <p className="text-sm leading-relaxed">• JavaScript</p>
+                                        <p className="text-sm leading-relaxed">• Keep learning...</p>
                                     </div>
                                     <div className="flex flex-col w-1/2">
-                                        <p className="text-m leading-relaxed">• React</p>
-                                        <p className="text-m leading-relaxed">• SQL</p>
-                                        <p className="text-m leading-relaxed">• Docker</p>
-                                        <p className="text-m leading-relaxed">• AWS</p>
+                                        <p className="text-sm leading-relaxed">• React</p>
+                                        <p className="text-sm leading-relaxed">• SQL</p>
+                                        <p className="text-sm leading-relaxed">• Docker</p>
+                                        <p className="text-sm leading-relaxed">• AWS</p>
                                     </div>
                                 </div>
                             </div>
