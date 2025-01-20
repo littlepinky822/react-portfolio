@@ -6,8 +6,8 @@ const Header = () => {
 
     const tags = [
         { id: '1', label: 'About Me', href: '#about' },
-        { id: '2', label: 'Social Media' },
-        { id: '3', label: 'Projects' }
+        { id: '2', label: 'Social Media', href: '#about' },
+        { id: '3', label: 'Projects', href: '#projects' }
     ];
 
     return (

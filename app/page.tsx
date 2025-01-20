@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import About from '@/components/About';
 import CursorDot from '@/components/Cursor';
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <CursorDot />
         <Header/>
         <About />
+        <Projects />
       </div>
     </main>
   );
