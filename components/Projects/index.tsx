@@ -13,7 +13,7 @@ const Projects = () => {
                         name="Octopus Energy IOS Widget"
                         description="A widget for the Octopus Energy Agile Tariff users to view their energy usage and costs." 
                         image="/medium_octopus_widget.jpg" 
-                        tags={["JavaScript", "IOS"]}
+                        tags={["JavaScript", "IOS", "REST API"]}
                         url="https://github.com/littlepinky822/Octopus-Agile-Widget"
                     />
                 <Card 
