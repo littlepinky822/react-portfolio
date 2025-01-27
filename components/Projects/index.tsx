@@ -10,11 +10,18 @@ const Projects = () => {
             <h1 className="text-4xl font-bold mb-8 font-serif">Projects</h1>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                 <Card 
+                        name="Octopus Energy IOS Widget"
+                        description="A widget for the Octopus Energy Agile Tariff users to view their energy usage and costs." 
+                        image="/medium_octopus_widget.jpg" 
+                        tags={["JavaScript", "IOS"]}
+                        url="https://github.com/littlepinky822/Octopus-Agile-Widget"
+                    />
+                <Card 
                     name="CamTrap Hub"
                     description="My MSc dissertation project. This is an all-in-one platform for camera trap data management and processing."
                     image="/camtrap-hub.png"
                     tags={["Docker", "React", "Flask"]}
-                    url="https://github.com/littlepinky822/CamTrap-Hub"
+                    url="https://git.cardiff.ac.uk/c22097859/c22097859_cmt403_dissertation"
                     />
                 <Card 
                     name="Portfolio Website" 
@@ -23,13 +30,6 @@ const Projects = () => {
                     tags={["React", "Next.js", "Typescript"]}
                     url="https://github.com/littlepinky822/react-portfolio"
                     />
-                <Card 
-                    name="My First Portfolio"
-                    description="My first website ever, I built this when I was in university. We all start somewhere." 
-                    image="/flask-portfolio.png" 
-                    tags={["Flask", "Python", "HTML"]}
-                    url="https://github.com/littlepinky822/my-personal-website"
-                />
             </div>
         </section>
     )
