@@ -31,7 +31,7 @@ const About = () => {
                                         <path d="M5 19L19 5" />
                                         <path d="M5 5h14v14" />
                                     </svg>
-                                    <a href="./Yan_Tung_Lam_QA_CV.pdf" target="_blank" rel="noopener noreferrer">See my CV</a>
+                                    <a href="./Yan_Tung_Lam_CV.pdf" target="_blank" rel="noopener noreferrer">See my CV</a>
                                 </span>
                                 
                                 {/* Social Links */}
