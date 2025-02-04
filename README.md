@@ -4,7 +4,7 @@
 
 Welcome! This is my personal portfolio website. This project is deployed with Vercel.
 
-To access: [https://react-portfolio-omega-gules.vercel.app/](https://react-portfolio-omega-gules.vercel.app/)
+To access: [https://www.jesslam.co.uk/](https://www.jesslam.co.uk/)
 
 ## To Edit or Run Locally
 
